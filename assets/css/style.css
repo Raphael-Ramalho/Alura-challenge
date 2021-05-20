@@ -47,6 +47,10 @@ h3{
     height: 56px;
 }
 
+select option{
+    color: black;
+}
+
 .cabecalho{
     display: flex;
     justify-content: space-between;
@@ -68,6 +72,7 @@ h3{
 
 .container{
     display: flex;
+
 }
 
 .navegacao__item{
@@ -96,6 +101,19 @@ h3{
     margin-bottom: 40px;
 }
 
-select option{
+.menu-configuracao__input.color-input{
+    padding: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    height: calc(56px - 16px - 2px);
+    width: calc(100% - 18px);
+    margin-bottom: 32px;
+}
+
+.menu-configuracao__input.save-input{
+    background-color: #5081FB;
     color: black;
 }
+
