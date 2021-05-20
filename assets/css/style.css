@@ -16,6 +16,20 @@ h2{
     font-size: 16px;
 }
 
+:-ms-input-placeholder{
+    color: #FFFFFF;
+    opacity: 0.64;
+    padding-left: 14px;
+    font-size: 16px;
+}
+
+::-ms-input-placeholder{
+    color: #FFFFFF;
+    opacity: 0.64;
+    padding-left: 14px;
+    font-size: 16px;
+}
+
 .cabecalho{
     display: flex;
     justify-content: space-between;
