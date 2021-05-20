@@ -1,0 +1,27 @@
+body{
+    background-color: #051D3B;
+    margin: 32px;
+    font-family: 'Work Sans', sans-serif;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho__input-search{
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 752px;
+    height: 56px;
+}
+
+.cabecalho__profile{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.cabecalho__profile img{
+    margin: 8px;
+}
