@@ -20,9 +20,8 @@ h3{
     font-size: 16px;
 }
 
-::placeholder{
-    color: #FFFFFF;
-    opacity: 0.64;
+::placeholder, .select-area{
+    color: rgb(255, 255, 255, 0.64);
     padding: 14px;
     font-size: 16px;
 }
@@ -95,4 +94,8 @@ h3{
 .menu-configuracao__input.area-input{
     height: 80px;
     margin-bottom: 40px;
+}
+
+select option{
+    color: black;
 }
