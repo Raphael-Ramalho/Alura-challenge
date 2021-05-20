@@ -2,7 +2,20 @@ body{
     background-color: #051D3B;
     margin: 32px;
     font-family: 'Work Sans', sans-serif;
+    color: white;
 }
+
+h2{
+    text-transform: uppercase;
+}
+
+::placeholder{
+    color: #FFFFFF;
+    opacity: 0.64;
+    padding-left: 14px;
+    font-size: 16px;
+}
+
 .cabecalho{
     display: flex;
     justify-content: space-between;
@@ -19,7 +32,6 @@ body{
 .cabecalho__profile{
     display: flex;
     align-items: center;
-    color: white;
 }
 
 .cabecalho__profile img{
