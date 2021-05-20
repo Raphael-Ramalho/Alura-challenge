@@ -15,23 +15,32 @@
 <body>
     <header class="cabecalho">
         <img src="assets/images/Logo.svg" alt="Logo Alura Dev">
-        <input class="cabecalho__input-search" type="text" placeholder="Busque por algo">
+        <input class="cabecalho__input-search input" type="text" placeholder="Busque por algo">
         <div class="cabecalho__profile">
             <img src="assets/images/Photo.svg" alt="Profile picture">
             <h1>Harry</h1>
         </div>
     </header>
-    <main>
-        <nav>
+    <main class="container">
+        <nav class="navegacao">
             <h2>Menu</h2>
-            <div>
-                <img src="assets/images/Icon-editor.svg" alt="Icone da aba do editor de código">
+            <div class="navegacao__item">
+                <img class="navegacao__icon" src="assets/images/Icon-editor.svg" alt="Icone da aba do editor de código">
                 <h3>Editor de código</h3>
             </div>
-            <div>
-                <img src="assets/images/Icon-comunidade.svg" alt="Icone da aba de comunidade">
+            <div class="navegacao__item">
+                <img class="navegacao__icon" src="assets/images/Icon-comunidade.svg" alt="Icone da aba de comunidade">
                 <h3>Comunidade</h3>
             </div>
+        </nav>
+        <nav class="menu-configuracao">
+            <h2>Seu projeto</h2>
+            <input class="menu-configuracao__input input" type="text" placeholder="Nome do seu projeto">
+            <textarea class="menu-configuracao__input input area-input" cols="30" rows="10" placeholder="Descrição do seu projeto"></textarea>
+            <h2>Personalização</h2>
+            <select class="menu-configuracao__input input">
+                <option>Javascript</option>
+            </select>
         </nav>
     </main>
 </body>
