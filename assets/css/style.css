@@ -1,6 +1,5 @@
 body{
     background-color: #051D3B;
-    margin: 32px;
     font-family: 'Work Sans', sans-serif;
     color: white;
 }
@@ -61,7 +60,7 @@ select option{
 }
 
 .cabecalho__logo{
-    width: 16%;
+    min-width:16%;
 }
 
 .cabecalho__input-search{
@@ -102,7 +101,6 @@ select option{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 0 40px;
 }
 
 .sessao-principal__container{
@@ -136,12 +134,12 @@ select option{
 
 .sessao-principal__highlight-input{
     background: rgba(80, 129, 251, 0.08);
+    margin-bottom: 40px;
 }
 
 .menu-configuracao{
     display: flex;
     flex-direction: column;
-    width: 20%;
 }
 
 .menu-configuracao__input{
@@ -155,13 +153,13 @@ select option{
 }
 
 .menu-configuracao__input.color-input{
-    padding: 8px;
+    padding: 5px;
     border-width: 1px;
     border-style: solid;
     border-color: white;
     border-radius: 8px;
     height: calc(56px - 16px - 2px);
-    width: calc(100% - 18px);
+    width: calc(100% - 12px);
     margin-bottom: 32px;
 }
 
