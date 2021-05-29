@@ -163,7 +163,6 @@ select option{
     border-color: white;
     border-radius: 8px;
     height: calc(56px - 12px);
-    width: calc(100% - 12px);
     margin-bottom: 32px;
 }
 
