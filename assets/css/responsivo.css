@@ -43,6 +43,31 @@
     body{
         margin: 32px;
     }
+
+    .cabecalho__input-search{
+        display: initial;
+    }
+
+    .cabecalho__buttons__search{
+        display: none;
+    }
+
+    .cabecalho__buttons__menu{
+        margin-left: 14px;
+    }
+
+    .menu-configuracao__input.personalizacao{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-configuracao__input .select-area{
+        width: calc(50% - 8px);
+    }
+
+    .menu-configuracao__input .color-input{
+        width: calc(50% - 12px - 8px );
+    }
 }
 
 @media screen and (min-width:992px){

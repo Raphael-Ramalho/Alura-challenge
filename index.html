@@ -26,7 +26,7 @@
             <h1>Harry</h1>
         </div>
         <div class="cabecalho__buttons">
-            <img src="assets/images/search_icon.svg" alt="Search icon">
+            <img class="cabecalho__buttons__search" src="assets/images/search_icon.svg" alt="Search icon">
             <img class = "cabecalho__buttons__menu"src="assets/images/menu_icon.svg" alt="Menu icon">
         </div>
         
@@ -69,12 +69,14 @@ const unfold = (f, seed) => {
             <input class="menu-configuracao__input input" type="text" placeholder="Nome do seu projeto">
             <textarea class="menu-configuracao__input input area-input" cols="30" rows="10" placeholder="Descrição do seu projeto"></textarea>
             <h2>Personalização</h2> 
-            <select class="menu-configuracao__input input select-area">
-                <option>Javascript</option>
-                <option>HTML</option>
-                <option>CSS</option>
-            </select>
-            <input class="menu-configuracao__input color-input" type="color"value = "#6BD1FF">
+            <div class="menu-configuracao__input personalizacao" >
+                <select class="input select-area">
+                    <option>Javascript</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                </select>
+                <input class="color-input" type="color"value = "#6BD1FF">
+            </div>
             <input class="menu-configuracao__input input save-input" type="submit" value="Salvar projeto">
         </nav>
     </main>

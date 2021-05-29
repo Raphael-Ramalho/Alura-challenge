@@ -142,7 +142,7 @@ select option{
     flex-direction: column;
 }
 
-.menu-configuracao__input{
+.menu-configuracao__input, .menu-configuracao__input .select-area{
     margin-bottom: 16px;
     width: 100%;
 }
@@ -152,13 +152,18 @@ select option{
     margin-bottom: 40px;
 }
 
-.menu-configuracao__input.color-input{
+.menu-configuracao__input.personalizacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-configuracao__input .color-input{
     padding: 5px;
     border-width: 1px;
     border-style: solid;
     border-color: white;
     border-radius: 8px;
-    height: calc(56px - 16px - 2px);
+    height: calc(56px - 12px);
     width: calc(100% - 12px);
     margin-bottom: 32px;
 }
