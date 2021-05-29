@@ -74,9 +74,39 @@
     .sessao-principal{
         margin: 0 40px;
     }
+
+    .cabecalho__profile{
+        display: flex;
+    }
+
+    .cabecalho__buttons{
+        display: none;
+    }
+
+    .navegacao{
+        display: initial;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+
     .menu-configuracao{
         width: 20%;
     }
+
+    .menu-configuracao__input.personalizacao{
+        flex-direction: column;
+    }
+
+    .menu-configuracao__input .select-area{
+        width: calc(100% );
+    }
+
+    .menu-configuracao__input .color-input{
+        width: calc(100% - 12px);
+    }
+
 }
 
 @media screen and (min-width:1200px){
