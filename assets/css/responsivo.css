@@ -37,6 +37,10 @@
         width: 100%;
     }
 
+    .menu-configuracao__input .color-input{
+        width: calc(100% - 12px);
+    }
+
 }
 
 @media screen and (min-width:768px){
