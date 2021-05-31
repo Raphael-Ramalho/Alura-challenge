@@ -3,8 +3,9 @@ body{
     font-family: 'Work Sans', sans-serif;
     color: white;
     display: grid;
-    grid-template-columns: 250px calc(80% - 250px) 20%;
-    grid-template-rows: 90px calc(100vh);
+    grid-template-columns: 210px calc(82% - 290px) calc(18%);
+    grid-template-rows: 56px calc(100vh);
+    grid-gap: 40px;
 }
 
 h1{
