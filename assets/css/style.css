@@ -27,9 +27,22 @@ h3{
     font-size: 16px;
 }
 
-::-ms-input-placeholder{
+:-moz-placeholder{
     color: #FFFFFF;
     opacity: 0.64;
+    padding: 14px;
+    font-size: 16px;
+}
+
+::-moz-placeholder{
+    color: #FFFFFF;
+    opacity: 0.64;
+    padding: 14px;
+    font-size: 16px;
+}
+
+::placeholder, .select-area {
+    color: rgb(255, 255, 255, 0.64);
     padding: 14px;
     font-size: 16px;
 }
@@ -42,11 +55,6 @@ h3{
     font-size: 16px;
 }
 
-::placeholder, .select-area {
-    color: rgb(255, 255, 255, 0.64);
-    padding: 14px;
-    font-size: 16px;
-}
 
 select option{
     color: black;
