@@ -4,7 +4,7 @@ body{
     color: white;
     display: grid;
     grid-template-columns: 210px calc(82% - 290px) calc(18%);
-    grid-template-rows: 56px calc(100vh);
+    grid-template-rows: 56px auto auto;
     grid-gap: 40px;
 }
 
@@ -79,6 +79,7 @@ select option{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 10px;
 }
 
 .cabecalho__profile img{
