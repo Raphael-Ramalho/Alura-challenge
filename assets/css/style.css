@@ -20,41 +20,36 @@ h3{
     font-size: 16px;
 }
 
-:-ms-input-placeholder{
-    color: #FFFFFF;
-    opacity: 0.64;
-    padding: 14px;
-    font-size: 16px;
-}
-
-:-moz-placeholder{
-    color: #FFFFFF;
-    opacity: 0.64;
-    padding: 14px;
-    font-size: 16px;
-}
-
-::-moz-placeholder{
-    color: #FFFFFF;
-    opacity: 0.64;
-    padding: 14px;
-    font-size: 16px;
-}
-
-::placeholder, .select-area {
+::placeholder, .select-area { /* Chrome */
     color: rgb(255, 255, 255, 0.64);
     padding: 14px;
-    font-size: 16px;
+}
+
+:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+    color: #FFFFFF;
+    opacity: 0.64;
+    padding: 14px;
+}
+
+.input:-moz-placeholder{  /* Firefox 18- */
+    color: #FFFFFF;
+    opacity: 0.64;
+    padding: 14px;
+}
+
+.input::-moz-placeholder{ /* Firefox 19+ */
+    color: #FFFFFF;
+    opacity: 0.64;
+    padding: 14px;
 }
 
 .input{
     background-color: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255, 0.64);
     height: 56px;
     font-size: 16px;
 }
-
 
 select option{
     color: black;
@@ -142,6 +137,7 @@ select option{
 .sessao-principal__highlight-input{
     background: rgba(80, 129, 251, 0.08);
     margin-bottom: 40px;
+    color: #ffffff;
 }
 
 .menu-configuracao{
