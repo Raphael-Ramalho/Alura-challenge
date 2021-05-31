@@ -29,7 +29,6 @@
     }
 
     .sessao-principal{
-        margin: auto;
         width: 100%;
     }
 
@@ -75,9 +74,6 @@
 }
 
 @media screen and (min-width:992px){
-    .sessao-principal{
-        margin: 0 40px;
-    }
 
     .cabecalho__profile{
         display: flex;
@@ -93,10 +89,6 @@
 
     .container{
         flex-direction: row;
-    }
-
-    .menu-configuracao{
-        width: 20%;
     }
 
     .menu-configuracao__input.personalizacao{

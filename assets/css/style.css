@@ -2,6 +2,9 @@ body{
     background-color: #051D3B;
     font-family: 'Work Sans', sans-serif;
     color: white;
+    display: grid;
+    grid-template-columns: 250px calc(80% - 250px) 20%;
+    grid-template-rows: 90px calc(100vh);
 }
 
 h1{
@@ -55,26 +58,26 @@ select option{
     color: black;
 }
 
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
 .cabecalho__logo{
-    min-width:16%;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    align-self: center;
+
 }   
 
 .cabecalho__input-search{
-    flex-grow: 1;
-    margin: 0 40px;
+    grid-column: 2/3;
+    grid-row: 1/1;
+    align-self: center;
 }
 
 .cabecalho__profile{
-    align-items: center;
+    grid-column: 3/3;
+    grid-row: 1/1;
+    align-self: center;
+    display: flex;
     justify-content: flex-end;
-    width: 20%;
+    align-items: center;
 }
 
 .cabecalho__profile img{
@@ -86,7 +89,8 @@ select option{
 }
 
 .navegacao{
-    width: 16%;
+    grid-column: 1/1;
+    grid-row: 2/3;
 }
 
 .navegacao__item{
