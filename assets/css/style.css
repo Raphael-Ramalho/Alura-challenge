@@ -3,7 +3,6 @@ body{
     font-family: 'Work Sans', sans-serif;
     color: white;
     display: grid;
-    grid-template-columns: 210px calc(82% - 290px) calc(18%);
     grid-template-rows: 56px auto auto;
     grid-gap: 40px;
 }
@@ -24,30 +23,38 @@ h3{
     font-size: 16px;
 }
 
-::placeholder, .select-area { /* Chrome */
+::placeholder, .select-area{ /* Chrome */
     color: rgb(255, 255, 255, 0.64);
-    padding: 14px;
+
 }
 
 :-ms-input-placeholder{ /* Internet Explorer 10-11 */
     color: #FFFFFF;
     opacity: 0.64;
-    padding: 14px;
+
 }
 
-.input:-moz-placeholder{  /* Firefox 18- */
+:-moz-placeholder{  /* Firefox 18- */
     color: #FFFFFF;
     opacity: 0.64;
-    padding: 14px;
+
 }
 
-.input::-moz-placeholder{ /* Firefox 19+ */
+::-moz-placeholder{ /* Firefox 19+ */
     color: #FFFFFF;
     opacity: 0.64;
-    padding: 14px;
+
 }
 
 .input{
+    padding: 0 14px;
+}
+
+.area-input{
+    padding: 14px;
+}
+
+.input, .area-input {
     background-color: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
     color: rgb(255, 255, 255, 0.64);
@@ -72,6 +79,18 @@ select option{
     align-self: center;
 }
 
+.cabecalho__buttons{
+    grid-column: 3/3;
+    grid-row: 1/1;
+    justify-self: end;
+    margin-right: 14px;
+    align-self: center;
+}
+
+.cabecalho__buttons__menu{
+    margin-left: 34px;
+}
+
 .cabecalho__profile{
     grid-column: 3/3;
     grid-row: 1/1;
@@ -88,11 +107,6 @@ select option{
 
 .container{
     display: flex;
-}
-
-.navegacao{
-    grid-column: 1/1;
-    grid-row: 2/3;
 }
 
 .navegacao__item{
@@ -142,7 +156,6 @@ select option{
 
 .sessao-principal__highlight-input{
     background: rgba(80, 129, 251, 0.08);
-    margin-bottom: 40px;
     color: #ffffff;
 }
 
@@ -153,7 +166,6 @@ select option{
 
 .menu-configuracao__input, .menu-configuracao__input .select-area{
     margin-bottom: 16px;
-    width: 100%;
 }
 
 .menu-configuracao__input.area-input{

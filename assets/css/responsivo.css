@@ -1,19 +1,12 @@
 @media screen and (min-width:0){
     body{
         margin: 27px 16px;
+        grid-template-columns: 150px calc(100% - 270px) 100px;
+        grid-gap: 10px;
     }
 
     .cabecalho__input-search{
         display: none;
-    }
-
-    .cabecalho__buttons{
-        justify-content: flex-end;
-        margin-right: 14px;
-    }
-
-    .cabecalho__buttons__menu{
-        margin-left: 34px;
     }
 
     .cabecalho__profile{
@@ -30,10 +23,15 @@
 
     .sessao-principal{
         width: 100%;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        margin: 30px 0px;
     }
 
     .menu-configuracao{
         width: 100%;
+        grid-column: 1/4;
+        grid-row: 3/4;
     }
 
     .menu-configuracao__input .color-input{
@@ -42,9 +40,11 @@
 
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:700px){
     body{
         margin: 32px;
+        grid-template-columns: 150px calc(100% - 280px) 50px;
+        grid-gap: 40px;
     }
 
     .cabecalho__input-search{
@@ -57,6 +57,10 @@
 
     .cabecalho__buttons__menu{
         margin-left: 14px;
+    }
+
+    .sessao-principal{
+        margin: 0;
     }
 
     .menu-configuracao__input.personalizacao{
@@ -75,6 +79,10 @@
 
 @media screen and (min-width:992px){
 
+    body{
+        grid-template-columns: 210px calc(80% - 290px) calc(20%);
+    }
+
     .cabecalho__profile{
         display: flex;
     }
@@ -85,10 +93,22 @@
 
     .navegacao{
         display: initial;
+        grid-column: 1/1;
+        grid-row: 2/3;
     }
 
     .container{
         flex-direction: row;
+    }
+
+    .sessao-principal{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .menu-configuracao{
+        grid-column: 3/3;
+        grid-row: 2/3;
     }
 
     .menu-configuracao__input.personalizacao{
