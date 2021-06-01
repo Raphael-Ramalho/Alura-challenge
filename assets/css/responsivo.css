@@ -86,6 +86,16 @@
         grid-template-columns: 210px calc(80% - 290px) calc(20%);
     }
 
+    .header-container{
+        position: inherit;
+        grid-column: 1/4;
+        grid-row: 1/1;
+    }
+
+    .cabecalho{
+        margin: 0px;
+    }
+
     .cabecalho__profile{
         display: flex;
     }
