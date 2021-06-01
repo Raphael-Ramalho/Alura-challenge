@@ -16,18 +16,20 @@
 
 </head>
 <body>
-    <div class="cabecalho__logo">
-        <img src="assets/images/Logo.svg" alt="Logo Alura Dev">
-    </div>
-    <input class="cabecalho__input-search input" type="text" placeholder="Busque por algo">
-    <div class="cabecalho__profile">
-        <img src="assets/images/Photo.svg" alt="Profile picture">
-        <h1>Harry</h1>
-    </div>
-    <div class="cabecalho__buttons">
-        <img class="cabecalho__buttons__search" src="assets/images/search_icon.svg" alt="Search icon">
-        <img class = "cabecalho__buttons__menu"src="assets/images/menu_icon.svg" alt="Menu icon">
-    </div>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <img src="assets/images/Logo.svg" alt="Logo Alura Dev">
+        </div>
+        <input class="cabecalho__input-search input" type="text" placeholder="Busque por algo">
+        <div class="cabecalho__profile">
+            <img src="assets/images/Photo.svg" alt="Profile picture">
+            <h1>Harry</h1>
+        </div>
+        <div class="cabecalho__buttons">
+            <button class="cabecalho__buttons__search"><img src="assets/images/search_icon.svg" alt="Search icon"></button>
+            <button class = "cabecalho__buttons__menu"><img src="assets/images/menu_icon.svg" alt="Menu icon"></button>
+        </div>
+    </header>
         
     
     <nav class="navegacao">
@@ -63,7 +65,7 @@ const unfold = (f, seed) => {
         </div>
         <input class="sessao-principal__highlight-input input" type="submit" value="Visualizar com o highlight">
     </section>
-    
+
     <nav class="menu-configuracao">
         <h2>Seu projeto</h2>
         <input class="menu-configuracao__input input" type="text" placeholder="Nome do seu projeto">

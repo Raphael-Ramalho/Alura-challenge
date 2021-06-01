@@ -1,6 +1,9 @@
 @media screen and (min-width:0){
     body{
         margin: 27px 16px;
+    }
+
+    body, .cabecalho{
         grid-template-columns: 150px calc(100% - 270px) 100px;
         grid-gap: 10px;
     }

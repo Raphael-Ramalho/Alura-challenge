@@ -66,6 +66,13 @@ select option{
     color: black;
 }
 
+.cabecalho{
+    display: grid;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
 .cabecalho__logo{
     grid-column: 1/1;
     grid-row: 1/1;
@@ -80,15 +87,23 @@ select option{
 }
 
 .cabecalho__buttons{
+    display: flex;
     grid-column: 3/3;
     grid-row: 1/1;
     justify-self: end;
-    margin-right: 14px;
     align-self: center;
+    align-content: center;
+}
+
+.cabecalho__buttons button{
+    width: 54px;
+    height: 54px;
 }
 
 .cabecalho__buttons__menu{
-    margin-left: 34px;
+    align-self: center;
+    justify-self: center;
+    
 }
 
 .cabecalho__profile{
