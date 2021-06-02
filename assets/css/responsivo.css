@@ -18,6 +18,10 @@
         display: none;
     }
 
+    .cabecalho__buttons__hidden-menu{
+        right: -316px;
+    }
+
     .container{
         flex-direction: column;
     }
@@ -67,6 +71,10 @@
 
     .cabecalho__buttons__menu{
         margin-left: 14px;
+    }
+
+    .cabecalho__buttons__hidden-menu{
+        right: -300px;
     }
 
     .sessao-principal{

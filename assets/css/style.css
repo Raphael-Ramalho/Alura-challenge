@@ -23,6 +23,21 @@ h3{
     font-size: 16px;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    margin: 30px 0;
+    border-color: #FFFFFF;
+    opacity: 8%;
+}
+
 ::placeholder, .select-area{ /* Chrome */
     color: rgb(255, 255, 255, 0.64);
 
@@ -99,10 +114,38 @@ select option{
     justify-self: end;
 }
 
-.cabecalho__buttons li{
+.cabecalho__buttons label{
     margin: 20px;
     list-style: none;
     text-decoration: none;  
+}
+
+.cabecalho__buttons input {
+    display: none;
+}
+
+
+.cabecalho__buttons__hidden-menu{
+    background-color: #2D415B;
+    position: fixed;
+    top: 97.4px;
+    width: 254px;
+    height: calc(100vh - 97.4px);
+    border-radius: 10px;
+}
+
+#menu-button:checked ~ .cabecalho__buttons__hidden-menu {
+    transform: translateX(-332px);
+}
+
+.cabecalho__buttons__hidden-menu ul{
+    margin: 24px;
+}
+
+.cabecalho__buttons__hidden-menu__profile{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
 }
 
 .cabecalho__buttons__menu{
