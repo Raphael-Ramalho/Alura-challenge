@@ -46,10 +46,13 @@
 @media screen and (min-width:700px){
     body{
         margin: 32px;
+    }
+
+    body, .cabecalho{
         grid-template-columns: 150px calc(100% - 280px) 50px;
         grid-gap: 40px;
     }
-
+    
     .cabecalho__input-search{
         display: initial;
     }
@@ -82,7 +85,7 @@
 
 @media screen and (min-width:992px){
 
-    body{
+    body, .cabecalho{
         grid-template-columns: 210px calc(80% - 290px) calc(20%);
     }
 
