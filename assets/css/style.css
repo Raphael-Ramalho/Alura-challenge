@@ -120,10 +120,28 @@ select option{
     text-decoration: none;  
 }
 
-.cabecalho__buttons input {
+.cabecalho__buttons input[type="checkbox"] {
     display: none;
 }
 
+.cabecalho__buttons__hidden-search-input{
+    background-color: #051D3B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    height: 62.4px;
+    width: calc(100vw - 32px);
+    padding: 27px 16px 5px 16px;
+    
+}
+
+.cabecalho__buttons__hidden-search-input input{
+    width: calc(100% - 30px);
+}
 
 .cabecalho__buttons__hidden-menu{
     background-color: #2D415B;
