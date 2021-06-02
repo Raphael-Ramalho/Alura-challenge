@@ -100,8 +100,7 @@ select option{
     justify-self: end;
 }
 
-.cabecalho__buttons li{
-    display: inline-block;
+.cabecalho__buttons button{
     margin: 20px;
     list-style: none;
     text-decoration: none;  
