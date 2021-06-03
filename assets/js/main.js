@@ -17,13 +17,16 @@
 
 // surroundColor.style.backgroundColor = "lightblue";
 
-const colorFromImput = document.querySelector(["data-color-input"]).value;
 
-function SurroundColor() {
 
-const colorFromImput = document.querySelector(["data-color-input"]).value;
+const SurroundColor = () => {
 
-console.log(`${colorFromImput}`);
-console.log("hey")
+    const colorFromImput = document.querySelector(["data-color-input"]).value;
 
+    console.log(`${colorFromImput}`);
+    console.log("hey");
 }
+
+const Color = document.querySelector(["data-color-input"]);
+
+Color.addEventListener("input", SurroundColor);
