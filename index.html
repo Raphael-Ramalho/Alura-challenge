@@ -78,11 +78,11 @@
   </nav>
 
   <section class="sessao-principal">
-    <div class="sessao-principal__container">
+    <div class="sessao-principal__container" data-textarea-external-color>
       <div class="sessao-principal__container__campo">
         <img src="assets/images/mac_buttons.svg" alt="mac buttons">
         <textarea class="sessao-principal__container__campo__code"
-          oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'>
+          oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px";'>
 const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
 
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -94,7 +94,7 @@ const unfold = (f, seed) => {
     }
     return go(f, seed, [])
 }
-                    </textarea>
+        </textarea>
       </div>
     </div>
     <input class="sessao-principal__highlight-input input" type="submit" value="Visualizar com o highlight">
@@ -114,7 +114,7 @@ const unfold = (f, seed) => {
       </select>
       <input class="color-input" type="color" value="#6BD1FF">
     </div>
-    <input class="menu-configuracao__input input save-input" type="submit" value="Salvar projeto">
+    <input class="menu-configuracao__input input save-input" data-color-input type="submit" value="Salvar projeto" oninput="SurroundColor">
   </nav>
 
   <script src="assets/js/main.js"></script>
