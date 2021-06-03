@@ -1,9 +1,37 @@
+
+
 .navegacao__item{
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+    opacity: 56%;
+    border-radius: 16px;
+}
+
+.navegacao__item.current-page{
+    opacity: 1;
 }
 
 .navegacao__icon{
+    padding: 16px;
     margin-right: 16px;
+    background-color: #5081FB;
+    border-radius: 16px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #051D3B;
 }
+
+.navegacao__icon:hover{
+    background-color: #7BA4FC;
+}
+
+.navegacao__icon:active{
+    background-color: #7BA4FC;
+    border-color: #5081FB;
+}
+
+.navegacao__icon:focus{
+    background-color: #96B9FD;
+}
+

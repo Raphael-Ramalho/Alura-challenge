@@ -44,13 +44,13 @@
         <nav class="cabecalho__buttons__hidden-menu">
           <ul>
             <li>
-              <a href="index.html" class="navegacao__item current-page">
+              <a href="index.html" class="navegacao__item">
                 <img class="navegacao__icon" src="assets/images/icon-editor.svg" alt="Icone da aba do editor de código">
                 <h3>Editor de código</h3>
               </a>
             </li>
             <li>
-              <a href="comunidade.html" class="navegacao__item">
+              <a href="comunidade.html" class="navegacao__item current-page">
                 <img class="navegacao__icon" src="assets/images/icon-comunidade.svg" alt="Icone da aba de comunidade">
                 <h3>Comunidade</h3>
               </a>
@@ -73,58 +73,18 @@
     <h2>Menu</h2>
     <ul>
       <li>
-        <a href="index.html" class="navegacao__item current-page">
+        <a href="index.html" class="navegacao__item">
           <img class="navegacao__icon" src="assets/images/icon-editor.svg" alt="Icone da aba do editor de código">
           <h3>Editor de código</h3>
         </a>
       </li>
       <li>
-        <a href="comunidade.html" class="navegacao__item">
+        <a href="comunidade.html" class="navegacao__item current-page">
           <img class="navegacao__icon" src="assets/images/icon-comunidade.svg" alt="Icone da aba de comunidade">
           <h3>Comunidade</h3>
         </a>
       </li>
     </ul>
-  </nav>
-
-  <section class="sessao-principal">
-    <div class="sessao-principal__container" data-textarea-external-color>
-      <div class="sessao-principal__container__campo">
-        <img src="assets/images/mac_buttons.svg" alt="mac buttons">
-        <textarea class="sessao-principal__container__campo__code"
-          oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px";'>
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
-
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                    
-const unfold = (f, seed) => {
-    const go = (f, seed, acc) => {
-        const res = f(seed)
-        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-    return go(f, seed, [])
-}
-        </textarea>
-      </div>
-    </div>
-    <input class="sessao-principal__highlight-input input" type="submit" value="Visualizar com o highlight">
-  </section>
-
-  <nav class="menu-configuracao">
-    <h2>Seu projeto</h2>
-    <input class="menu-configuracao__input input" type="text" placeholder="Nome do seu projeto">
-    <textarea class="menu-configuracao__input area-input" cols="30" rows="10"
-      placeholder="Descrição do seu projeto"></textarea>
-    <h2>Personalização</h2>
-    <div class="menu-configuracao__input personalizacao">
-      <select class="input select-area">
-        <option>Javascript</option>
-        <option>HTML</option>
-        <option>CSS</option>
-      </select>
-      <input class="color-input" type="color" value="#6BD1FF" data-color-input oninput='SurroundColor()'>
-    </div>
-    <input class="menu-configuracao__input input save-input" type="submit" value="Salvar projeto">
   </nav>
 
   <script src="assets/js/main.js"></script>
