@@ -1,0 +1,9 @@
+.navegacao__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.navegacao__icon{
+    margin-right: 16px;
+}

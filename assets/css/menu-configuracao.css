@@ -1,0 +1,35 @@
+
+.menu-configuracao{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-configuracao__input, .menu-configuracao__input .select-area{
+    margin-bottom: 16px;
+}
+
+.menu-configuracao__input.area-input{
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.menu-configuracao__input.personalizacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-configuracao__input .color-input{
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    height: calc(56px - 12px);
+    margin-bottom: 32px;
+}
+
+.menu-configuracao__input.save-input{
+    background-color: #5081FB;
+    color: black;
+    font-size: 16px;
+}

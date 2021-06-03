@@ -1,0 +1,40 @@
+
+.sessao-principal{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sessao-principal__container{
+    background-color: #6BD1FF;
+    padding: 32px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.sessao-principal__container__campo{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.sessao-principal__container__campo img{
+    width: 52px;
+    margin-bottom: 24px;
+    margin: 16px 0 8px 16px;
+}
+
+.sessao-principal__container__campo__code{
+    color: white;
+    height: 230px;
+    line-height: 18px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding: 16px;
+}
+
+.sessao-principal__highlight-input{
+    background: rgba(80, 129, 251, 0.08);
+    color: #ffffff;
+}

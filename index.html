@@ -13,6 +13,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/cabecalho.css">
+  <link rel="stylesheet" href="assets/css/navegacao.css">
+  <link rel="stylesheet" href="assets/css/sessao-principal.css">
+  <link rel="stylesheet" href="assets/css/menu-configuracao.css">
   <link rel="stylesheet" href="assets/css/responsivo.css">
 
 </head>
@@ -112,9 +116,9 @@ const unfold = (f, seed) => {
         <option>HTML</option>
         <option>CSS</option>
       </select>
-      <input class="color-input" type="color" value="#6BD1FF" oninput='SurroundColor()'>
+      <input class="color-input" type="color" value="#6BD1FF" data-color-input oninput='SurroundColor()'>
     </div>
-    <input class="menu-configuracao__input input save-input" data-color-input type="submit" value="Salvar projeto">
+    <input class="menu-configuracao__input input save-input" type="submit" value="Salvar projeto">
   </nav>
 
   <script src="assets/js/main.js"></script>
