@@ -19,14 +19,12 @@
 
 
 
-const SurroundColor = () => {
+function SurroundColor() {
 
-    const colorFromImput = document.querySelector(["data-color-input"]).value;
+    console.log("hey");
+
+    const colorFromImput = document.querySelector("[data-color-input]");
 
     console.log(`${colorFromImput}`);
-    console.log("hey");
+    console.log("hey2");
 }
-
-const Color = document.querySelector(["data-color-input"]);
-
-Color.addEventListener("input", SurroundColor);
