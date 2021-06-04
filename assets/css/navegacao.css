@@ -12,6 +12,10 @@
     opacity: 1;
 }
 
+.navegacao__item:active {
+    background-color: #7BA4FC
+}
+
 .navegacao__icon{
     padding: 16px;
     margin-right: 16px;
@@ -20,6 +24,10 @@
     border-width: 4px;
     border-style: solid;
     border-color: #051D3B;
+}
+
+.cabecalho__buttons__hidden-menu .navegacao__icon{
+    border-color: #2D415B;
 }
 
 .navegacao__icon:hover{
