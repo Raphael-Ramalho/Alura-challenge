@@ -23,6 +23,8 @@ linguagem.addEventListener("change", () => {
     mudaLinguagem();
 })
 
+
+//highlight button function
 botao.addEventListener("click", () => {
     const codigo = areaDoCodigo.querySelector("code");
     hljs.highlightElement(codigo);

@@ -94,19 +94,10 @@
       <div class="sessao-principal__container__campo">
         <img src="assets/images/mac_buttons.svg" alt="mac buttons">
 
+
         <div data-codigo-wrapper>
           <code class="sessao-principal__container__campo__code hljs" data-textarea-code contenteditable="true" aria-label="editor" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'>
-      const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
-
-      const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                          
-      const unfold = (f, seed) => {
-          const go = (f, seed, acc) => {
-              const res = f(seed)
-              return res ? go(f, res[1], acc.concat([res[0]])) : acc
-          }
-          return go(f, seed, [])
-      }
+        
           </code>
         </div>
 
