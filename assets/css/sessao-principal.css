@@ -26,7 +26,6 @@
 }
 
 .sessao-principal__container__campo__code{
-    display: block;
     color: white;
     height: 230px;
     width: calc(100% - 32px);
@@ -34,6 +33,7 @@
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     padding: 0 16px;
+    overflow: auto;
 }
 
 .sessao-principal__highlight-input{

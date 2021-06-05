@@ -94,8 +94,8 @@
       <div class="sessao-principal__container__campo">
         <img src="assets/images/mac_buttons.svg" alt="mac buttons">
 
-        <pre data-codigo-wrapper>
-          <textarea class="sessao-principal__container__campo__code hljs" data-textarea-code  oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'>
+        <div data-codigo-wrapper>
+          <code class="sessao-principal__container__campo__code hljs" data-textarea-code contenteditable="true" aria-label="editor" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'>
       const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
 
       const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -107,8 +107,8 @@
           }
           return go(f, seed, [])
       }
-          </textarea>
-        </pre>
+          </code>
+        </div>
 
       </div>
     </div>
@@ -127,7 +127,7 @@
         <option value="html">HTML</option>
         <option value="css">CSS</option>
       </select>
-      <input class="color-input" type="color" value="#6BD1FF" data-color-input oninput='SurroundColor()'>
+      <input class="color-input" type="color" value="#6BD1FF" data-color-input >
     </div>
     <input class="menu-configuracao__input input save-input" type="submit" value="Salvar projeto">
   </nav>
