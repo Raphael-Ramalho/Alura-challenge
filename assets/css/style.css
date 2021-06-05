@@ -90,6 +90,15 @@ select option{
     z-index: 1;
 }
 
+.exposicao{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.exposicao-item{
+    width: 50%;
+}
 
 

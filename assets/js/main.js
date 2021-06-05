@@ -8,7 +8,7 @@ function SurroundColor() {
 colorFromImput.addEventListener("input", SurroundColor);
 
 
-//text editor
+//highlight - text editor 
 const areaDoCodigo = document.querySelector("[data-codigo-wrapper]");
 const linguagem = document.querySelector("[data-linguagens]");
 const botao = document.querySelector("[data-botao-highlight]");
@@ -24,7 +24,7 @@ linguagem.addEventListener("change", () => {
 })
 
 
-//highlight button function
+//highlight - button function
 botao.addEventListener("click", () => {
     const codigo = areaDoCodigo.querySelector("code");
     hljs.highlightElement(codigo);
