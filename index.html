@@ -8,16 +8,18 @@
   <title>Alura Dev</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/dark.css">
   <link rel="stylesheet" href="assets/css/cabecalho.css">
   <link rel="stylesheet" href="assets/css/navegacao.css">
   <link rel="stylesheet" href="assets/css/sessao-principal.css">
   <link rel="stylesheet" href="assets/css/menu-configuracao.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsivo.css">
+
 
 </head>
 
@@ -91,23 +93,26 @@
     <div class="sessao-principal__container" data-textarea-external-color>
       <div class="sessao-principal__container__campo">
         <img src="assets/images/mac_buttons.svg" alt="mac buttons">
-        <textarea class="sessao-principal__container__campo__code"
-          oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px";'>
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
 
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                    
-const unfold = (f, seed) => {
-    const go = (f, seed, acc) => {
-        const res = f(seed)
-        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-    return go(f, seed, [])
-}
-        </textarea>
+        <pre data-codigo-wrapper>
+          <textarea class="sessao-principal__container__campo__code hljs" data-textarea-code  oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'>
+      const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
+
+      const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                          
+      const unfold = (f, seed) => {
+          const go = (f, seed, acc) => {
+              const res = f(seed)
+              return res ? go(f, res[1], acc.concat([res[0]])) : acc
+          }
+          return go(f, seed, [])
+      }
+          </textarea>
+        </pre>
+
       </div>
     </div>
-    <input class="sessao-principal__highlight-input input" type="submit" value="Visualizar com o highlight">
+    <button class="sessao-principal__highlight-input input" data-botao-highlight>Visualizar com o highlight</button>
   </section>
 
   <nav class="menu-configuracao">
@@ -117,19 +122,18 @@ const unfold = (f, seed) => {
       placeholder="Descrição do seu projeto"></textarea>
     <h2>Personalização</h2>
     <div class="menu-configuracao__input personalizacao">
-      <select class="input select-area">
-        <option>Javascript</option>
-        <option>HTML</option>
-        <option>CSS</option>
+      <select class="input select-area" data-linguagens>
+        <option value="javascript">Javascript</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
       </select>
       <input class="color-input" type="color" value="#6BD1FF" data-color-input oninput='SurroundColor()'>
     </div>
     <input class="menu-configuracao__input input save-input" type="submit" value="Salvar projeto">
   </nav>
 
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
 
 </body>
 

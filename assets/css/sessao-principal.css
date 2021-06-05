@@ -26,12 +26,14 @@
 }
 
 .sessao-principal__container__campo__code{
+    display: block;
     color: white;
     height: 230px;
+    width: calc(100% - 32px);
     line-height: 18px;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    padding: 16px;
+    padding: 0 16px;
 }
 
 .sessao-principal__highlight-input{
