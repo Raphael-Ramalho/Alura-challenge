@@ -47,6 +47,13 @@
         width: calc(100% - 12px);
     }
 
+    .exposicao{
+        grid-column: 1 / 4;
+    }
+
+    .exposicao__item{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:700px){
@@ -98,6 +105,7 @@
     .menu-configuracao__input .color-input{
         width: calc(50% - 12px - 8px );
     }
+
 }
 
 @media screen and (min-width:992px){
@@ -156,4 +164,11 @@
         width: calc(100% - 12px);
     }
 
+    .exposicao{
+        grid-column: 2 / 4;
+    }
+
+    .exposicao__item{
+        width: calc(50% - 12px);
+    }
 }
