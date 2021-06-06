@@ -3,7 +3,7 @@ const colorFromImput = document.querySelector("[data-color-input]");
 
 function SurroundColor() {
     document.querySelector("[data-textarea-external-color]").style.background = colorFromImput.value;
-}
+};
 
 colorFromImput.addEventListener("input", SurroundColor);
 
