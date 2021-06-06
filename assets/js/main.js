@@ -1,17 +1,41 @@
-//code surround color
+
 const colorFromImput = document.querySelector("[data-color-input]");
+const areaDoCodigo = document.querySelector("[data-codigo-wrapper]");
+const linguagem = document.querySelector("[data-linguagens]");
+const botaoPreview = document.querySelector("[data-botao-highlight]");
+const botaoSalvar = document.querySelector("[data-botao-salvar]")
+const tituloProjeto = document.querySelector("[data-titulo-projeto]")
+const descricaoProjeto = document.querySelector("[data-descricao-projeto]")
+
+
+//code surround color
+colorFromImput.addEventListener("input", SurroundColor);
+//highlight area - text editor 
+linguagem.addEventListener("change", () => {
+    mudaLinguagem();
+})
+//highlight activation - button function
+botaoPreview.addEventListener("click", () => {
+    const codigo = areaDoCodigo.querySelector("code");
+    hljs.highlightElement(codigo);
+})
+//botao salvar projeto
+botaoSalvar.addEventListener("click", () => {
+    if(typeof(Storage) !== "undefined") {
+        //se for do tipo Storage e diferente de undefined (ou seja, se estiver definido):
+        console.log("suporta o localStorage :)");
+        const projeto = montaProjeto(); //const projetos recebe objeto projeto criado na função montaProjeto.
+        salvaLocalStorage(projeto); //salva o objeto projeto no objeto localStorage
+        console.log(projeto);
+    }else{
+        console.log("não suporta o localStorage :(");
+    }
+})
+
 
 function SurroundColor() {
     document.querySelector("[data-textarea-external-color]").style.background = colorFromImput.value;
 };
-
-colorFromImput.addEventListener("input", SurroundColor);
-
-
-//highlight - text editor 
-const areaDoCodigo = document.querySelector("[data-codigo-wrapper]");
-const linguagem = document.querySelector("[data-linguagens]");
-const botao = document.querySelector("[data-botao-highlight]");
 
 function mudaLinguagem() {
     let codigo = document.querySelector("[data-textarea-code]");
@@ -19,15 +43,48 @@ function mudaLinguagem() {
     areaDoCodigo.firstChild.innerText = codigo.innerText;
 }
 
-linguagem.addEventListener("change", () => {
-    mudaLinguagem();
-})
+function montaProjeto(){
+    let projeto ={
+        'id' : atribuiId(),
+        'detalhesDoProjeto':{
+            'nomeDoProjeto': tituloProjeto.value,
+            'descricaoDoProjeto': descricaoProjeto.value,
+            'linguagem': linguagem.value,
+            'codigo': areaDoCodigo.querySelector('code').innerText
+        } 
+    }
+    return projeto;
+}
 
+let numeroId = 3;
 
-//highlight - button function
-botao.addEventListener("click", () => {
-    const codigo = areaDoCodigo.querySelector("code");
-    hljs.highlightElement(codigo);
-})
+if(localStorage.length > 0){
+    numeroId = localStorage.length;
+}
+
+function atribuiId() {
+    if(localStorage.length == 0){
+        //^Esse statment é verdadeiro se o localStorage tiver tamanho 0.
+        //O localstorage é iniciado com 0 itens armazenados, ou seja, com tamanho 0.
+        return 0;
+    } else {
+        if (localStorage.length == numeroId){
+            let novoId = numeroId;
+            numeroId++;
+            return novoId;
+        }
+    }
+}
+
+function salvaLocalStorage(objetoJson){
+    localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson)); 
+    //^O .stringfy transforma o objeto Json em string (necessário para armazenamento em outro objeto)
+    //^O setItem (nome, valor) cria uma chave nome/valor no objeto ou atualiza o valor de uma existente.
+}
+
+//Limpar localStorage pelo console: localStorage.clear()
+
+    
+
 
 

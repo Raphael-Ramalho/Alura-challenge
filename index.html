@@ -103,9 +103,8 @@
 
   <nav class="menu-configuracao">
     <h3>Seu projeto</h3>
-    <input class="menu-configuracao__input input" type="text" placeholder="Nome do seu projeto">
-    <textarea class="menu-configuracao__input area-input" cols="30" rows="10"
-      placeholder="Descrição do seu projeto"></textarea>
+    <input class="menu-configuracao__input input" type="text" placeholder="Nome do seu projeto" data-titulo-projeto>
+    <textarea class="menu-configuracao__input area-input" cols="30" rows="10" placeholder="Descrição do seu projeto" data-descricao-projeto></textarea>
     <h3>Personalização</h3>
     <div class="menu-configuracao__input personalizacao">
       <select class="input select-area" data-linguagens>
@@ -115,11 +114,13 @@
       </select>
       <input class="color-input" type="color" value="#6BD1FF" data-color-input >
     </div>
-    <input class="menu-configuracao__input input save-input" type="submit" value="Salvar projeto">
+    <button class="menu-configuracao__input input save-input" data-botao-salvar>Salvar projeto</button>
   </nav>
 
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/comunidade.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
+  
 
 </body>
 

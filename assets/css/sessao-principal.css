@@ -33,6 +33,7 @@
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     padding: 0 16px;
+    margin-bottom: 16px ;
     overflow: auto;
 }
 
