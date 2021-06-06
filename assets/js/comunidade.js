@@ -1,0 +1,1 @@
+const todosOsProjetos = document.querySelector("[data-todos-projetos]")
