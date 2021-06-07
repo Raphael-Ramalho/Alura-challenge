@@ -8,6 +8,7 @@ const tituloProjeto = document.querySelector("[data-titulo-projeto]")
 const descricaoProjeto = document.querySelector("[data-descricao-projeto]")
 
 
+
 //code surround color
 colorFromImput.addEventListener("input", SurroundColor);
 //highlight area - text editor 
@@ -33,6 +34,7 @@ botaoSalvar.addEventListener("click", () => {
 })
 
 
+
 function SurroundColor() {
     document.querySelector("[data-textarea-external-color]").style.background = colorFromImput.value;
 };
@@ -50,34 +52,20 @@ function montaProjeto(){
             'nomeDoProjeto': tituloProjeto.value,
             'descricaoDoProjeto': descricaoProjeto.value,
             'linguagem': linguagem.value,
+            'surroundColor': colorFromImput.value,
             'codigo': areaDoCodigo.querySelector('code').innerText
         } 
     }
     return projeto;
 }
 
-let numeroId = 1;
-
-if(localStorage.length > 0){
-    numeroId = localStorage.length;
-}
-
 function atribuiId() {
-    if(localStorage.length == 0){
-        //^Esse statment é verdadeiro se o localStorage tiver tamanho 0.
-        //O localstorage é iniciado com 0 itens armazenados, ou seja, com tamanho 0.
-        return 0;
-    } else {
-        if (localStorage.length == numeroId){
-            let novoId = numeroId;
-            numeroId++;
-            return novoId;
-        }
-    }
+    return localStorage.length;
+    // atribui um nome a cada id baseado em sua posição no array
 }
 
 function salvaLocalStorage(objetoJson){
-    localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson)); 
+    localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson));; 
     //^O .stringfy transforma o objeto Json em string (necessário para armazenamento em outro objeto)
     //^O setItem (nome, valor) cria uma chave nome/valor no objeto ou atualiza o valor de uma existente.
 }
