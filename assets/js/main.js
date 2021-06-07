@@ -56,7 +56,7 @@ function montaProjeto(){
     return projeto;
 }
 
-let numeroId = 3;
+let numeroId = 1;
 
 if(localStorage.length > 0){
     numeroId = localStorage.length;
