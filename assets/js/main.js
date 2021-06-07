@@ -43,7 +43,7 @@ function mudaLinguagem() {
     let codigo = document.querySelector("[data-textarea-code]");
     areaDoCodigo.innerHTML = `<code class = "sessao-principal__container__campo__code hljs ${linguagem.value}" data-textarea-code contenteditable="true" aria-label="editor"></code>`;
     areaDoCodigo.firstChild.innerText = codigo.innerText;
-}
+}   
 
 function montaProjeto(){
     let projeto ={
