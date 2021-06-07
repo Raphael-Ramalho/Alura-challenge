@@ -24,7 +24,7 @@
 }
 
 .exposicao__item__project__content{
-    height: 240px;
+    min-height: 240px;
     padding: 12px;
     background-color: black;
     border-radius: 8px;

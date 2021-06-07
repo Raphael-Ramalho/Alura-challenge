@@ -30,7 +30,7 @@ function montaCartao(projeto){
         <div class="exposicao__item__project__content">
           <img src="assets/images/mac_buttons.svg" alt="mac buttons">
           <div class="exposicao__item__interior hljs ${projeto.detalhesDoProjeto.linguagem}">
-            <code class="exposicao__item__interior__code hljs"></code>
+            <code class="exposicao__item__interior__code hljs" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></code>
           </div>
         </div>
       </div>
