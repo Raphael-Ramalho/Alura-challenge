@@ -4,8 +4,8 @@ const areaDoCodigo = document.querySelector("[data-codigo-wrapper]");
 const linguagem = document.querySelector("[data-linguagens]");
 const botaoPreview = document.querySelector("[data-botao-highlight]");
 const botaoSalvar = document.querySelector("[data-botao-salvar]")
-const tituloProjeto = document.querySelector("[data-titulo-projeto]")
-const descricaoProjeto = document.querySelector("[data-descricao-projeto]")
+const tituloProjeto = document.querySelector("[data-titulo-projeto]");
+const descricaoProjeto = document.querySelector("[data-descricao-projeto]");
 
 
 
@@ -23,7 +23,7 @@ botaoPreview.addEventListener("click", () => {
 //botao salvar projeto
 botaoSalvar.addEventListener("click", () => {
     if(typeof(Storage) !== "undefined") {
-        //se for do tipo Storage e diferente de undefined (ou seja, se estiver definido):
+        //se for do tipo Storage e diferente de undefined (ou seja, se estiver definido)
         console.log("suporta o localStorage :)");
         const projeto = montaProjeto(); //const projetos recebe objeto projeto criado na função montaProjeto.
         salvaLocalStorage(projeto); //salva o objeto projeto no objeto localStorage
