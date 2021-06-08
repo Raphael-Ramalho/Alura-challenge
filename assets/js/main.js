@@ -44,7 +44,7 @@ function SurroundColor() {
 
 function mudaLinguagem() {
     let codigo = document.querySelector("[data-textarea-code]");
-    areaDoCodigo.innerHTML = `<code class = "sessao-principal__container__campo__code hljs ${linguagem.value}" data-textarea-code contenteditable="true" aria-label="editor" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></code>`;
+    areaDoCodigo.innerHTML = `<code class = "sessao-principal__container__campo__code hljs ${linguagem.value}" contenteditable="true" aria-label="editor" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></code>`;
     areaDoCodigo.firstChild.innerText = codigo.innerText;
 }   
 
