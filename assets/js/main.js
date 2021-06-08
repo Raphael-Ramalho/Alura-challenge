@@ -11,15 +11,18 @@ const descricaoProjeto = document.querySelector("[data-descricao-projeto]");
 
 //code surround color
 colorFromImput.addEventListener("input", SurroundColor);
+
 //highlight area - text editor 
 linguagem.addEventListener("change", () => {
     mudaLinguagem();
 })
+
 //highlight activation - button function
 botaoPreview.addEventListener("click", () => {
     const codigo = areaDoCodigo.querySelector("code");
     hljs.highlightElement(codigo);
 })
+
 //botao salvar projeto
 botaoSalvar.addEventListener("click", () => {
     if(typeof(Storage) !== "undefined") {
@@ -67,7 +70,7 @@ function atribuiId() {
 function salvaLocalStorage(objetoJson){
     localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson));; 
     //^O .stringfy transforma o objeto Json em string (necessário para armazenamento em outro objeto)
-    //^O setItem (nome, valor) cria uma chave nome/valor no objeto ou atualiza o valor de uma existente.
+    //^O setItem (nome, valor) cria uma chave nome/valor no objeto ou atualiza o valor de uma chave ja existente.
 }
 
 //Limpar localStorage pelo console: localStorage.clear()
