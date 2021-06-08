@@ -30,7 +30,7 @@ function montaCartao(projeto){
     <div class="exposicao__item__container">
       <div class="exposicao__item__container__project" style="background-color: ${projeto.detalhesDoProjeto.surroundColor}">
         <div class="exposicao__item__container__project__content">
-          <img src="assets/images/mac_buttons.svg" alt="mac buttons">
+          <img src="../assets/images/mac_buttons.svg" alt="mac buttons">
           <div class="exposicao__item__container__project__content__interior data-codigo-wrapper">
             <code class="exposicao__item__interior__code hljs"></code>
           </div>
@@ -42,14 +42,14 @@ function montaCartao(projeto){
       </div>
       <div class="exposicao__item__container__informacao-adicional">
             <div class="exposicao__item__container__informacao-adicional__trend">
-                <img src="assets/images/message_icon.svg" alt="message icon">
+                <img src="../assets/images/message_icon.svg" alt="message icon">
                 <p>9</p>
-                <img src="assets/images/like_icon.svg" alt="">
+                <img src="../assets/images/like_icon.svg" alt="">
                 <p>9</p>
             </div>
             <button class="exposicao__item__container__informacao-adicional__tag ${projeto.detalhesDoProjeto.linguagem}">${projeto.detalhesDoProjeto.linguagem}</button>
             <div class="exposicao__item__container__informacao-adicional__developer">
-                <img src="assets/images/Photo.svg" alt="profile photo">
+                <img src="../assets/images/Photo.svg" alt="profile photo">
                 <p>@Harry</p>
             </div>
         </div>
