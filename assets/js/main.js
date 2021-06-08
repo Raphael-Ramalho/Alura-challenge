@@ -15,26 +15,25 @@ colorFromImput.addEventListener("input", SurroundColor);
 //highlight area - text editor 
 linguagem.addEventListener("change", () => {
     mudaLinguagem();
-})
+});
 
 //highlight activation - button function
 botaoPreview.addEventListener("click", () => {
     const codigo = areaDoCodigo.querySelector("code");
     hljs.highlightElement(codigo);
-})
+});
 
 //botao salvar projeto
 botaoSalvar.addEventListener("click", () => {
     if(typeof(Storage) !== "undefined") {
         //se for do tipo Storage e diferente de undefined (ou seja, se estiver definido)
-        console.log("suporta o localStorage :)");
         const projeto = montaProjeto(); //const projetos recebe objeto projeto criado na função montaProjeto.
         salvaLocalStorage(projeto); //salva o objeto projeto no objeto localStorage
         console.log(projeto);
     }else{
         console.log("não suporta o localStorage :(");
     }
-})
+});
 
 
 
@@ -46,7 +45,7 @@ function mudaLinguagem() {
     let codigo = document.querySelector("[data-textarea-code]");
     areaDoCodigo.innerHTML = `<code class = "sessao-principal__container__campo__code hljs ${linguagem.value}" contenteditable="true" aria-label="editor" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></code>`;
     areaDoCodigo.firstChild.innerText = codigo.innerText;
-}   
+};   
 
 function montaProjeto(){
     let projeto ={
@@ -60,18 +59,18 @@ function montaProjeto(){
         } 
     }
     return projeto;
-}
+};
 
 function atribuiId() {
     return localStorage.length;
     // atribui um nome a cada id baseado em sua posição no array
-}
+};
 
 function salvaLocalStorage(objetoJson){
     localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson));; 
     //^O .stringfy transforma o objeto Json em string (necessário para armazenamento em outro objeto)
     //^O setItem (nome, valor) cria uma chave nome/valor no objeto ou atualiza o valor de uma chave ja existente.
-}
+};
 
 //Limpar localStorage pelo console: localStorage.clear()
 
