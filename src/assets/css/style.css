@@ -82,7 +82,7 @@ button:hover{
 
 .save-input:active{
     box-shadow: inset 0 0 1.5em rgba(0, 0, 0, 0.473);
-    font-size: 0.9em;
+    font-size: 0.97em;
 }
 
 .input, .area-input {
