@@ -1,5 +1,18 @@
 const todosOsProjetos = document.querySelector("[data-todos-projetos]")
+const botaoLimpar = document.querySelector("[data-limpar]");
+const botaoLimparHidden = document.querySelector("[data-limpar-hidden]");
 
+//botoes que limpam o localStorage
+botaoLimpar.addEventListener("click", () => {
+  localStorage.clear();
+  window.location.reload()
+});
+botaoLimparHidden.addEventListener("click", () => {
+  localStorage.clear();
+  window.location.reload()
+});
+
+//logica do armazenamento de codigo
 new function () {
     mostraProjetos();
 }
@@ -58,6 +71,4 @@ function montaCartao(projeto){
   `
   return cartao;
 }
-
-
 
