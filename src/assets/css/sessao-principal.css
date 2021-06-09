@@ -42,3 +42,8 @@
     background: rgba(80, 129, 251, 0.08);
     color: #ffffff;
 }
+
+.sessao-principal__highlight-input:active{
+    box-shadow: inset 0 0 3em rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 1em black;
+}
