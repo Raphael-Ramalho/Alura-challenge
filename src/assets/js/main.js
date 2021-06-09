@@ -30,6 +30,7 @@ botaoSalvar.addEventListener("click", () => {
         const projeto = montaProjeto(); //const projetos recebe objeto projeto criado na função montaProjeto.
         salvaLocalStorage(projeto); //salva o objeto projeto no objeto localStorage
         console.log(projeto);
+        window.location.reload();
     }else{
         console.log("não suporta o localStorage :(");
     }

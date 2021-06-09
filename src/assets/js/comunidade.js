@@ -9,7 +9,7 @@ botaoLimpar.addEventListener("click", () => {
 });
 botaoLimparHidden.addEventListener("click", () => {
   localStorage.clear();
-  window.location.reload()
+  window.location.reload();
 });
 
 //logica do armazenamento de codigo
