@@ -47,10 +47,6 @@
     padding: 27px 16px 5px 16px;
 }
 
-.cabecalho__buttons__hidden-menu__profile img {
-    margin-right: 16px;
-}
-
 .cabecalho__buttons__hidden-search-input input{
     width: calc(100% - 30px);
 }
@@ -81,6 +77,11 @@
     align-items: center;
     margin: 0 10px;
 }
+
+.cabecalho__buttons__hidden-menu__profile img {
+    margin-right: 16px;
+}
+
 
 .cabecalho__buttons__menu{
     align-self: center;
