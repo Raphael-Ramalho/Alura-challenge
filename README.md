@@ -20,5 +20,6 @@ O site criado consiste em um editor de texto capaz de aplicar syntax highlightin
     <li>HTML5
     <li>CSS3
     <li>Javascript
+    <li>Node.js
     <li>Visual Studio Code
   </ul>
