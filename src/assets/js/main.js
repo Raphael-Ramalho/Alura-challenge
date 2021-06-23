@@ -75,7 +75,3 @@ function salvaLocalStorage(objetoJson){
 
 //Limpar localStorage pelo console: localStorage.clear()
 
-    
-
-
-
