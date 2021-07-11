@@ -13,6 +13,7 @@ O site criado consiste em um editor de texto capaz de aplicar syntax highlightin
     <li>CSS Grid
     <li>Media query
     <li>DOM
+    <li>localstorage
   </ul>
 
 <h3>💻 Tecnologias utilizadas:</h3>
